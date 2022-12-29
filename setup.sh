@@ -8,3 +8,8 @@ rpm --import https://jenkins.io/redhat/jenkins-ci.org.key
 yum install -y jenkins
 chkconfig jenkins on
 service jenkins start
+
+echo "Journalctl debug step"
+journalctl -xe
+echo "Systemctl debug step"
+systemctl status jenkins.service
