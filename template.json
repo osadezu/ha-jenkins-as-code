@@ -2,7 +2,7 @@
     "variables" : {
         "region" : "us-east-1",
         "aws_profile": "default-os",
-        "source_ami" : "ami-0b0dcb5067f052a63",
+        "source_ami" : "ami-0b5eea76982371e91",
         "instance_type": "t2.micro"
     },
     "builders" : [
@@ -13,7 +13,7 @@
             "instance_type" : "{{user `instance_type`}}",
             "source_ami" : "{{user `source_ami`}}",
             "ssh_username" : "ec2-user",
-            "ami_name" : "jenkins-master-2.361.4-1.1-{{timestamp}}",
+            "ami_name" : "jenkins-master-2.375.1-1.1-{{timestamp}}",
             "ami_description" : "Amazon Linux Image with Jenkins Server",
             "run_tags" : {
                 "Name" : "packer-builder"
